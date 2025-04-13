@@ -48,8 +48,8 @@ def get_valid_response():
 
 def calculate_energy():
     """Calculate and display the user's energy aspect."""
-    sensing = 0
-    intuition = 0
+    judging = 0
+    perceiving = 0
 
     print("Welcome to the Energy Aspect Questionnaire!")
     print("Please answer the following questions honestly.\n")
@@ -60,21 +60,21 @@ def calculate_energy():
         ans = get_valid_response()
 
         if agree_aspect == "s":
-            sensing += Score[ans]
-            intuition += 1 - Score[ans]
+            judging += Score[ans]
+            perceiving += 1 - Score[ans]
         else:
-            sensing += 1 - Score[ans]
-            intuition += Score[ans]
+            judging += 1 - Score[ans]
+            perceiving += Score[ans]
 
-    total = sensing + intuition
-    n_percent = (intuition / total) * 100
-    s_percent = (sensing / total) * 100
+    total = judging + perceiving
+    n_percent = (perceiving / total) * 100
+    s_percent = (judging / total) * 100
 
     print("\nResults:")
-    if sensing > intuition:
-        print(f"You are {s_percent:.2f}% Sensing.")
-    else:
-        print(f"You are {n_percent:.2f}% Intuitive.")
+    if judging > perceiving:
+        print(f"You are {s_percent:.2f}% judging.")
+    else: 
+        print(f"You are {n_percent:.2f}% perceiving.")
 
 if __name__ == "__main__":
-    calculate_energy()
+     calculate_energy()
