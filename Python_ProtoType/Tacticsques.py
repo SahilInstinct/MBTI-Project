@@ -1,3 +1,4 @@
+# sushant saankar
 # What we do here is Ques list is
 # We added tuples as the element of list
 # Such that 1st element of tuple is Question itself
@@ -50,7 +51,6 @@ def calculate_energy():
     """Calculate and display the user's energy aspect."""
     judging = 0
     perceiving = 0
-
     print("Welcome to the Energy Aspect Questionnaire!")
     print("Please answer the following questions honestly.\n")
 
@@ -61,7 +61,7 @@ def calculate_energy():
 
         if agree_aspect == "s":
             judging += Score[ans]
-            perceiving += 1 - Score[ans]
+            perceiving += 1 - Score[ans] 
         else:
             judging += 1 - Score[ans]
             perceiving += Score[ans]
@@ -74,7 +74,7 @@ def calculate_energy():
     if judging > perceiving:
         print(f"You are {s_percent:.2f}% judging.")
     else: 
-        print(f"You are {n_percent:.2f}% perceiving.")
+        print(f"You are {n_percent:.2f}% perceiving.") 
 
-if __name__ == "__main__":
+if __name__ == "__main__": 
      calculate_energy()
