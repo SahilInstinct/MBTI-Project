@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Psyche-Spectrum</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <!-- Main navbar -->
+        <nav class="navbar">
+            <div class="logo-container">
+                <img src="logo.png" class="logo" alt="Logo" />
+                <span class="site-title">Psyche-Spectrum</span>
+            </div>
+
+            <!-- Full nav links for desktop -->
+            <ul class="nav-links">
+                <li><a href="#">Personality Test</a></li>
+                <li><a href="#">Personality Types</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#" class="login-btn">Log In</a></li>
+            </ul>
+
+            <!-- Hamburger icon (mobile only) -->
+            <div class="hamburger" onclick="openMenu()">☰</div>
+        </nav>
+    </header>
+
+    <!-- Slide-out side menu (mobile only) -->
+    <div class="side-menu" id="sideMenu">
+        <div class="menu-header">
+            <button class="close-btn" onclick="closeMenu()">×</button>
+        </div>
+        <ul class="menu-links">
+            <li><a href="#" class="test-btn">Take the Test</a></li>
+            <li><a href="#">Personality Test</a></li>
+            <li><a href="#">Personality Types</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">Languages</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">🔍 Search</a></li>
+            <li><a href="#" class="login-btn">Log In</a></li>
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
