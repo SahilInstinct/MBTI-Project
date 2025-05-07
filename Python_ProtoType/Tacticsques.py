@@ -58,7 +58,7 @@ def calculate_energy():
         print(f"Question {i}: {question}")
         print("\n".join([f"{key}: {value}" for key, value in Response.items()]))
         ans = get_valid_response()
-
+    
         if agree_aspect == "s":
             judging += Score[ans]
             perceiving += 1 - Score[ans] 
@@ -67,7 +67,7 @@ def calculate_energy():
             perceiving += Score[ans]
 
     total = judging + perceiving
-    n_percent = (perceiving / total) * 100
+    n_percent = (perceiving / total) * 100  # 
     s_percent = (judging / total) * 100
 
     print("\nResults:")
@@ -77,4 +77,4 @@ def calculate_energy():
         print(f"You are {n_percent:.2f}% perceiving.") 
 
 if __name__ == "__main__": 
-     calculate_energy()
+     calculate_energy() 
